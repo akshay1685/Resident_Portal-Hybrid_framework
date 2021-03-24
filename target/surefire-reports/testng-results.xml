@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Resident_portal" duration-ms="28464" started-at="2021-03-24T17:57:19Z" finished-at="2021-03-24T17:57:47Z">
+    <groups>
+    </groups>
+    <test name="Resident-portal-test" duration-ms="28464" started-at="2021-03-24T17:57:19Z" finished-at="2021-03-24T17:57:47Z">
+      <class name="Tests.Login_Page">
+        <test-method status="PASS" signature="Open_App()[pri:0, instance:Tests.Login_Page@97e1986]" name="Open_App" is-config="true" duration-ms="12744" started-at="2021-03-24T23:27:19Z" finished-at="2021-03-24T23:27:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Open_App -->
+        <test-method status="PASS" signature="Login_test()[pri:0, instance:Tests.Login_Page@97e1986]" name="Login_test" duration-ms="15151" started-at="2021-03-24T23:27:32Z" finished-at="2021-03-24T23:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_test -->
+        <test-method status="PASS" signature="Close_App()[pri:0, instance:Tests.Login_Page@97e1986]" name="Close_App" is-config="true" duration-ms="377" started-at="2021-03-24T23:27:47Z" finished-at="2021-03-24T23:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close_App -->
+      </class> <!-- Tests.Login_Page -->
+    </test> <!-- Resident-portal-test -->
+  </suite> <!-- Resident_portal -->
+</testng-results>
