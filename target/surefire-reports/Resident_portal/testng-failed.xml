@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite verbose="0" name="Failed suite [Resident_portal]">
+  <listeners>
+    <listener class-name="Utilities.Reporting"/>
+  </listeners>
+  <test name="Resident-portal-test(failed)">
     <classes>
       <class name="Tests.Login_Page">
         <methods>
           <include name="Login_test"/>
           <include name="Open_App"/>
+          <include name="Close_App"/>
         </methods>
       </class> <!-- Tests.Login_Page -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Resident-portal-test(failed) -->
+</suite> <!-- Failed suite [Resident_portal] -->

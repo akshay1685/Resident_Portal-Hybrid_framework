@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.google.common.base.Verify;
+
 import Page_Objects.Login_page_objects;
 
 public class Login_Page extends Baseclass

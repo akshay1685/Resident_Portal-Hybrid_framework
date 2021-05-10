@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Tests.Login_Page_Read_Excel">
+      <class name="Tests.Login_Page">
         <methods>
-          <include name="Login_data" invocation-numbers="0 2 3 4"/>
+          <include name="Login_test"/>
           <include name="Open_App"/>
-          <include name="Close_App"/>
         </methods>
-      </class> <!-- Tests.Login_Page_Read_Excel -->
+      </class> <!-- Tests.Login_Page -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

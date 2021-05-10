@@ -21,7 +21,7 @@ public class Login_page_objects extends Baseclass
 	}//Constructor created to be called by test case
 	
 	@FindBy (id= "com.psi.residentportal:id/edtBase")
-	AndroidElement username;
+	private AndroidElement username;
 	
 	@FindBy (xpath= "//android.view.View[contains(@content-desc,'Password')]")
 	AndroidElement password;
