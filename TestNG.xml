@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Resident_portal">
+<suite name="Resident_portal" >
 	<listeners>
 		<listener class-name="Utilities.Reporting"/>
 	</listeners>	
   <test name="Resident-portal-test">
     <classes>
         <class name="Tests.Login_Page"/> 
-       <!--   <class name="Tests.Login_Page_Read_Excel"/>-->
+        <class name="Tests.Login_Page_Read_Excel"/>
         
     </classes>
   </test> 
