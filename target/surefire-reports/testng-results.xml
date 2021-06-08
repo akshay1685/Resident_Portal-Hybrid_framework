@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="4" total="6" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Resident_portal" duration-ms="45078" started-at="2021-05-01T13:51:38Z" finished-at="2021-05-01T13:52:23Z">
+  <suite name="Resident_portal" duration-ms="105549" started-at="2021-05-13T18:51:07Z" finished-at="2021-05-13T18:52:53Z">
     <groups>
     </groups>
-    <test name="Resident-portal-test" duration-ms="45078" started-at="2021-05-01T13:51:38Z" finished-at="2021-05-01T13:52:23Z">
+    <test name="Resident-portal-test" duration-ms="105549" started-at="2021-05-13T18:51:07Z" finished-at="2021-05-13T18:52:53Z">
       <class name="Tests.Login_Page">
-        <test-method status="PASS" signature="Open_App()[pri:0, instance:Tests.Login_Page@97e1986]" name="Open_App" is-config="true" duration-ms="23423" started-at="2021-05-01T19:21:38Z" finished-at="2021-05-01T19:22:01Z">
+        <test-method status="PASS" signature="Open_App()[pri:0, instance:Tests.Login_Page@26f67b76]" name="Open_App" is-config="true" duration-ms="12236" started-at="2021-05-14T00:21:08Z" finished-at="2021-05-14T00:21:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Open_App -->
-        <test-method status="FAIL" signature="Login_test()[pri:0, instance:Tests.Login_Page@97e1986]" name="Login_test" duration-ms="20294" started-at="2021-05-01T19:22:01Z" finished-at="2021-05-01T19:22:22Z">
+        <test-method status="PASS" signature="Login_test()[pri:0, instance:Tests.Login_Page@26f67b76]" name="Login_test" duration-ms="14936" started-at="2021-05-14T00:21:20Z" finished-at="2021-05-14T00:21:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_test -->
+        <test-method status="PASS" signature="Close_App()[pri:0, instance:Tests.Login_Page@26f67b76]" name="Close_App" is-config="true" duration-ms="399" started-at="2021-05-14T00:21:35Z" finished-at="2021-05-14T00:21:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close_App -->
+      </class> <!-- Tests.Login_Page -->
+      <class name="Tests.Login_Page_Read_Excel">
+        <test-method status="PASS" signature="Open_App()[pri:0, instance:Tests.Login_Page_Read_Excel@2669b199]" name="Open_App" is-config="true" duration-ms="10253" started-at="2021-05-14T00:21:35Z" finished-at="2021-05-14T00:21:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Open_App -->
+        <test-method status="FAIL" signature="Login_data(java.lang.String, java.lang.String)[pri:0, instance:Tests.Login_Page_Read_Excel@2669b199]" name="Login_data" duration-ms="9383" started-at="2021-05-14T00:21:47Z" data-provider="LoginData" finished-at="2021-05-14T00:21:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[akshayh@l.lcl]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Xento124]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -22,7 +48,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at Tests.Login_Page.Login_test(Login_Page.java:41)
+	at Tests.Login_Page_Read_Excel.Login_data(Login_Page_Read_Excel.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,12 +81,199 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login_test -->
-        <test-method status="PASS" signature="Close_App()[pri:0, instance:Tests.Login_Page@97e1986]" name="Close_App" is-config="true" duration-ms="1117" started-at="2021-05-01T19:22:22Z" finished-at="2021-05-01T19:22:23Z">
+        </test-method> <!-- Login_data -->
+        <test-method status="PASS" signature="Login_data(java.lang.String, java.lang.String)[pri:0, instance:Tests.Login_Page_Read_Excel@2669b199]" name="Login_data" duration-ms="25093" started-at="2021-05-14T00:21:56Z" data-provider="LoginData" finished-at="2021-05-14T00:22:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[akshayh@l.lcl]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_data -->
+        <test-method status="FAIL" signature="Login_data(java.lang.String, java.lang.String)[pri:0, instance:Tests.Login_Page_Read_Excel@2669b199]" name="Login_data" duration-ms="14825" started-at="2021-05-14T00:22:21Z" data-provider="LoginData" finished-at="2021-05-14T00:22:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[akshayh1@l.lcl]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Xento125]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Tests.Login_Page_Read_Excel.Login_data(Login_Page_Read_Excel.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_data -->
+        <test-method status="FAIL" signature="Login_data(java.lang.String, java.lang.String)[pri:0, instance:Tests.Login_Page_Read_Excel@2669b199]" name="Login_data" duration-ms="8251" started-at="2021-05-14T00:22:36Z" data-provider="LoginData" finished-at="2021-05-14T00:22:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[akshayh2@l.lcl]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Xento126]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Tests.Login_Page_Read_Excel.Login_data(Login_Page_Read_Excel.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_data -->
+        <test-method status="FAIL" signature="Login_data(java.lang.String, java.lang.String)[pri:0, instance:Tests.Login_Page_Read_Excel@2669b199]" name="Login_data" duration-ms="8028" started-at="2021-05-14T00:22:44Z" data-provider="LoginData" finished-at="2021-05-14T00:22:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Tests.Login_Page_Read_Excel.Login_data(Login_Page_Read_Excel.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_data -->
+        <test-method status="PASS" signature="Close_App()[pri:0, instance:Tests.Login_Page_Read_Excel@2669b199]" name="Close_App" is-config="true" duration-ms="442" started-at="2021-05-14T00:22:52Z" finished-at="2021-05-14T00:22:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close_App -->
-      </class> <!-- Tests.Login_Page -->
+      </class> <!-- Tests.Login_Page_Read_Excel -->
     </test> <!-- Resident-portal-test -->
   </suite> <!-- Resident_portal -->
 </testng-results>

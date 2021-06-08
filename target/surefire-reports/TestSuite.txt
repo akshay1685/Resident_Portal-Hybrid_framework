@@ -1,12 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 46.542 sec <<< FAILURE! - in TestSuite
-Login_test(Tests.Login_Page)  Time elapsed: 20.3 sec  <<< FAILURE!
+Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 106.986 sec <<< FAILURE! - in TestSuite
+Login_data(Tests.Login_Page_Read_Excel)  Time elapsed: 9.386 sec  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at Tests.Login_Page.Login_test(Login_Page.java:41)
+	at Tests.Login_Page_Read_Excel.Login_data(Login_Page_Read_Excel.java:49)
+
+Login_data(Tests.Login_Page_Read_Excel)  Time elapsed: 14.825 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Tests.Login_Page_Read_Excel.Login_data(Login_Page_Read_Excel.java:49)
+
+Login_data(Tests.Login_Page_Read_Excel)  Time elapsed: 8.251 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Tests.Login_Page_Read_Excel.Login_data(Login_Page_Read_Excel.java:49)
+
+Login_data(Tests.Login_Page_Read_Excel)  Time elapsed: 8.028 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Tests.Login_Page_Read_Excel.Login_data(Login_Page_Read_Excel.java:49)
 
